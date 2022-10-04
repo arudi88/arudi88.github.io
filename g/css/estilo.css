@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+  color: white;
+  background-color: #21211a;
+}
+
+header {
+  display: flex;
+  position: relative;
+  background: #f9d423;
+  height: 30%;
+  padding-top: 1em;
+}
+
+.columnasocial {
+  position: relative;
+  justify-content: space-between;
+  right: -93%;
+  padding-top: 0.1%;
+  
+}
+
+.LOGO {
+  position: relative;
+  width: 35%;
+  left: -5%;
+  padding-bottom: 0.3em;
+}
+
+
+.menu {
+  position: relative;
+  bottom: 40px;
+  right: -65%;
+  justify-content: space-between;
+  align-items: baseline;
+  text-shadow: #111;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  list-style-type: none;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0.9em;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+  text-shadow: #111;
+}
+
+
+footer {
+  position: fixed;
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  background-color: #f9d423;
+  color: white;
+  font-size: 20px;
+  padding-top: 0.4em;
+  padding-bottom: 0.5em;
+}
+
+
+.footer-menu {
+  position: relative;
+  margin-top: 0.5%;
+  right: -37%;
+  }
+
+.footer-menu a {
+  color: black;
+  font-size: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  }
+
+.footer-menu a:hover {
+  color: white;
+}
+
+.copyright p {
+  font-size: 0.6em;
+  text-align: center;
+}
+
+
+
