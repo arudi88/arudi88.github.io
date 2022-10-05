@@ -14,7 +14,8 @@ header {
   display: flex;
   position: relative;
   background: #f9d423;
-  height: 30%;
+  height: 120px;
+  width: 100%;
   padding-top: 1em;
 }
 
@@ -28,7 +29,7 @@ header {
 
 .LOGO {
   position: relative;
-  width: 35%;
+  width: 400px;
   left: -5%;
   padding-bottom: 0.3em;
 }
@@ -67,7 +68,7 @@ li a:hover {
 
 
 footer {
-  position: fixed;
+  position: relative;
   box-sizing: border-box;
   float: left;
   width: 100%;

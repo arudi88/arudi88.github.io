@@ -1,29 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
 
-li,a{
-    display: inline;
-    text-decoration: none;
-    padding: 50px;
-    color: rgb(27, 13, 100);
-    font-size: 18px;
-}
-/*  
-header{
-background-color: #f9d423;
-height: 170px;
-
-}
-
-footer{
-    background-color: #f9d423;
-    height: 170px;
-    text-align: center;
-}
-
-body{
+  }
+     
+  body {
+    font-family: 'Barlow', sans-serif;
     color: white;
     background-color: #21211a;
+  }
+  
+
+header {
+    margin: 0.5rem;
+    position: relative;
+    background: #f9d423;
+    height: 180px;
+  }
+
+  
+  
+  .columnasocial {
+    display: inline-flex;
+    justify-content: end;
+    position: relative;
+    float: right;
+    padding: 10px;
+
+    
+    
+  }
+  
+  .LOGO {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+  }
+
+  li {
+    float: left;
+    list-style-type: none;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0.9em;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color: white;
+    text-shadow: #111;
+  }
+  
+  
+  
+
+
+main{
+    min-height: 300px;
+    
 }
-*/
+
+footer {
+    position:relative;
+    height: 100px;
+    width: 100%;
+    background-color: #f9d423;
+    color: white;
+    font-size: 20px; 
+  }
+  
+
+
 .formulario{
     display: grid;
     grid-template-columns: 6fr 6fr;
@@ -36,6 +88,11 @@ body{
     padding: 10px;
     cursor: pointer;
 }
+
+.formulario__grupo{
+    padding: 10px;
+}
+    
 
 .formulario__grupo-input{
     position: relative;
@@ -58,101 +115,30 @@ body{
     box-shadow:  3px 0px 30px rgba(163,163,163, 0.5);
 }
 
-/* CSS Daniela debajo 
+/* /* CSS Daniela debajo  */
 
-* {
-    margin: 0;
-    padding: 0;
-  
-  }
-  */
-   
-  body {
-    font-family: 'Abel', sans-serif;
-    color: white;
-    background-color: #21211a;
-  }
-  
-  header {
-    display: flex;
-    position: relative;
-    background: #f9d423;
-    height: 30%;
-    padding-top: 1em;
-  }
 
-    footer {
-    position: fixed;
-    box-sizing: border-box;
-    float: left;
-    width: 100%;
-    background-color: #f9d423;
-    color: white;
-    font-size: 20px;
-    padding-top: 0.4em;
-    padding-bottom: 0.5em;
-  }
-  
-   /*
-  .columnasocial {
-    position: relative;
-    justify-content: space-between;
-    right: -93%;
-    padding-top: 0.1%;
-    
-  }
-  
-  .LOGO {
-    position: relative;
-    width: 35%;
-    left: -5%;
-    padding-bottom: 0.3em;
-  }
-  
-  
   .menu {
     position: relative;
-    bottom: 40px;
-    right: -65%;
-    justify-content: space-between;
-    align-items: baseline;
     text-shadow: #111;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    float: right;
+    padding-top: 120px;
   }
   
-  li {
-    float: left;
-    list-style-type: none;
-  }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 0.9em;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    color: white;
-    text-shadow: #111;
-  }
-  
-  
+
 
   
   .footer-menu {
     position: relative;
-    margin-top: 0.5%;
-    right: -37%;
+    text-align: center;
+    
+    
     }
   
   .footer-menu a {
     color: black;
     font-size: 0.8em;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
     }
@@ -166,5 +152,5 @@ body{
     text-align: center;
   }
   
-  */
+  
   
