@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  color: white;
+  background-color: #21211a;
+  margin: 50px;
+}
+
+
+header {
+  position: relative;
+  height: 200px;
+}
+
+.burger_menu {
+  display: flex;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  float: right;
+  top: -40px;
+
+
+}
+
+.columnasocial {
+  display: inline-flex;
+  justify-content: end;
+  position: relative;
+  float: right;
+  padding: 10px;
+
+
+}
+
+.LOGO {
+  position: relative;
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+
+}
+
+li {
+  float: left;
+  list-style-type: none;
+
+
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 0.9em;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+  text-shadow: #111;
+}
+
+
+
+main {
+  min-height: 300px;
+
+
+}
+
+footer {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color: #f9d423;
+  color: white;
+  font-size: 20px;
+}
+
+
+
+.formulario {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  font-family: Barlow;
+}
+
+.formulario__label {
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.formulario__grupo {
+  padding: 10px;
+}
+
+
+.formulario__grupo-input {
+  position: relative;
+}
+
+.formulario__input {
+  width: 80%;
+  background: white;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: .3s ease all;
+}
+
+.formulario__input:focus {
+  border: 3px solid #f9d423;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.5);
+}
+
+/* /* CSS Daniela debajo  */
+
+
+
+.menu {
+  display: flex;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding-top: 120px;
+}
+
+
+
+
+.footer-menu {
+  position: relative;
+  text-align: center;
+
+
+}
+
+.footer-menu a {
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: white;
+}
+
+.copyright p {
+  color: black;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+
+.container {
+  display: inline-grid;
+  grid-template: 190px 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+  grid-template-areas: "header header header"
+    "contenido1 contenido1 contenido1"
+    "contenido2 contenido2 contenido2"
+    "contenido3 contenido3 contenido3"
+    "contenido4 contenido4 contenido4"
+    "footer footer footer";
+  grid-gap: 20px;
+  height: 100vh;
+  font-size: large;
+  text-align: justify;
+  
+}
+
+
+.item {
+  background-color: #21211a;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
+  
+}
+
+.header {
+  grid-area: header;
+  background: #f9d423;
+}
+
+
+.contenido1 {
+  grid-area: contenido1;
+  
+
+}
+
+.contenido1>h1 {
+  text-align: center;
+  color: #f9d423;
+  text-decoration: underline overline #fa4747;
+  font-size: xx-large;
+}
+
+.contenido2 {
+  grid-area: contenido2;
+}
+
+.contenido2>h1 {
+  text-align: center;
+  color: #f9d423;
+  text-decoration: underline overline #fa4747;
+  font-size: xx-large;
+}
+
+.contenido3 {
+  grid-area: contenido3;
+
+}
+
+.contenido3>h1 {
+  text-align: center;
+  color: #f9d423;
+  text-decoration: underline overline #fa4747;
+  font-size: xx-large;
+}
+
+.contenido4{
+  
+  grid-area: contenido4;
+  
+
+}
+
+.contenido4>h1 {
+  text-align: center;
+  color: #f9d423;
+  text-decoration: underline overline #fa4747;
+  font-size: xx-large;
+}
+
+.link_f {
+  color: #f9d423;
+
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #f9d423;
+}
+
+.home_image {
+  position: relative;
+  max-height: 500px;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(255, 208, 0, 0.041);
+}
+
+
+
+
+/* HOVER
+
+.hover-galeria{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  transition: transform .5s;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.hover-galeria > img{
+  width: 50%;
+}
+
+.galeria_img:hover .hover-galeria{
+  transform: scale(0);
+}*/
+
+
+@media screen and (min-width: 640px) and (max-width: 960px) {
+
+  .container {
+    display: grid;
+    grid-template: 190px 1fr 1fr 100px / 1fr 1fr;
+    grid-template-areas: "header header"
+      "contenido1 contenido2"
+      "contenido3 contenido3"
+      "footer footer";
+    
+  }
+
+  .LOGO {
+    height: 85%;
+
+  }
+
+  .burger_menu {
+    display: block;
+  }
+
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+
+  .container {
+    display: grid;
+    grid-template: 190px 1fr 1fr 1fr 100px / 1fr;
+    grid-template-areas: "header"
+      "contenido1"
+      "contenido2"
+      "contenido3"
+      "footer";
+
+  }
+
+  .LOGO {
+    height: 70%;
+  }
+
+  .burger_menu {
+    display: block;
+  }
+
+
+}
+
+/* .div_header{
+  display: flex;
+
+} */
