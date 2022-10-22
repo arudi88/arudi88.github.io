@@ -11,14 +11,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link href="img/favicon-32x32.png" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8bf462dae.js" crossorigin="anonymous"></script>
+
 
     <title>Gambeer</title>
 </head>
 
 <body>
+    <section class="container">
+        <div class="item header div_header">
+            <div class="img_logo">
+            <img class="logo" src="img/LOGO.png" alt="Logo Gambeer">
+        </div>
+            <nav class="navbar">
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="nosotros.html">Quienes somos</a></li>
+                  <li><a href="productos.html">Nuestras cervezas</a></li>
+                  <li><a href="contacto.html">Contactanos</a></li>
+                </ul>
+              </nav>
+        </div>
+    <main class="contenido1 contenido_formulario">
 
-    <header>
+        <form action="" class="formulario" id="formulario">
+            <div class="header_form">
+                <h4>Contactanos</h4>
+                <p>Por favor, envianos un mensaje solicitando fecha para tu reserva en nuestro local. <br>En caso de que quieras realizar un pedido, por favor indicanos que necesitas y un representante se comunicara a la brevedad.</p>
+            </div>
+            <!-- Nombre y apellido-->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre y Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="to_name" id="nombre" placeholder="Natalia Natalia">
+                </div>
+                <p class="formulario__input-error">Solo puede contener letras</p>
+            </div>
 
+            <!-- Mail -->
+            <div class="formulario__grupo" id="grupo__email">
+                <label for="email" class="formulario__label">Correo Electronico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="client_mail" id="email"
+                    placeholder="correo@correo.com">
+                    </div>
+                <p class="formulario__input-error">El email no puede contener espacios o simbolos trambolikos</p>
+            </div>
+
+            <!-- Telefono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Telefono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="client_phone" id="telefono" placeholder="1512345678">            
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros, sin espacios</p>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Mensaje</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input formulario__mensaje" name="message" id="mensaje"
+                        placeholder="Escribe aqui tu mensaje...">
+
+                </div>
+                <p class="formulario__input-error">El campo no puede estar vacio</p>
+            </div>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <input type="submit" class="formulario__btn" value="ENVIAR"></button>
+                <!-- <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Su mensaje ha sido enviado exitosamente</p> -->
+            </div>
+        </form>
+
+        <section class="mapa">
+            <div class="mapa__flex">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3286.0695100503885!2d-58.4801834678316!3d-34.55179540246429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1665881868255!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+       </section>
+
+
+    </main>
+    <div class="item footer">
+        <div class="footer-menu">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="nosotros.html">Nuestras cervezas</a>
+            <a href="contacto.html">Contactanos</a>
+        </div>
+      <br>
+        <div class="copyright">
+            <p>Gambeer &copy; 2022 - Derechos Reservados</p>
+        </div>
         <div class="columnasocial">
 
             <a href="https://www.instagram.com"><img class="Insta" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAktJREFUSEuNlUGS00AMRZ8uwXY8JyHZsOcAFJ6TJCkO4swxWE04SQIb1pxAILXsljttMq5KYjtq/S/pSxLSJYDmF3H/+P2WBdg/5bvn+Q4sDP0n36+ZZHcFIKPkw1sAnSizH0FX+L2kDKBfgZ19+pj+9hbkLqAnIJ4TXOfwCDJFzuzA5QHhAXUiZnsGTjVFgjT5GlS4ou50v1mb+5oNwFsQeamkJIpcqzApjMCzwG2u438i+GKMgT/AZ+AazvdLZWuK/M4MLNRisA5vRHkCBoQfKGeBTwrfQX4J+qQehR+qAI0jE+sZ5CXp1sKfEHaNlG8C3xR+g3wAfY00mf1zwWlSFN1QAUoEbwI7hWMUcFAwhR09jeasKn1CPcUh/8cAI+qKOiKclggKsDmaIp2z0uw5ATSdLKCFqZw8RcLMyFg2GhfrFatZtS+Ao4CUwdCLQDiicvJuhENx4GlwgEbWQciVlAkVz20NagRxoHSy6dvz3wytg8BRwXRvDWbXBDIKGhEQjbagqTEyYztk1xBdbdI8o96lucgXdUkbYY+41uA+AjdqASzuQVBrQIsmp8hkutd16poaLHJahDa3+9Io4dIi2KHyMQbcT5BzZ8avG7Xqda74zFT2gr5nVOQpYg12DeCXOdTVPhDU8ptZNMppV8mypUq3explD7pM4ASwkPFxnSIoxp25Hq8GVHaRrqyobh/MVTRGBwQ/HArZwrmBXAR91c7u6EXw7iV9txY6u72tQXeXpwVY5mHHUa72xtJfpzmvvcdON6j/21h/AaXK/yJFHPeCAAAAAElFTkSuQmCC" /></a>
@@ -26,87 +109,9 @@
             <a href="https://www.twitter.com"><img class="Twitter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAdJJREFUSEuNlu15wjAMhF9tkk7SdhLIJMAkDZPAJmUT9ZHtxPInza/iJJLudHep4C4BNPwWBEXDQT71zx7P9AukU6szuHzZUYvRu2nGMK3kIVOZTrV+g3Hberga+c7TAdMfNGUbqOWgEYEv9Yb3iJsvlAuwxFdlA72l3yfA/k67LJf8UGFFeU34PQM/x/084QthQWUVdMtiKSvZuRXfBG47Mr80BzgopFCa8ELlKehd4RkwOIoM7q/rdwXuqeF+fBb4KRq3UL9JxSNJ5fUAvvYbGtDIC3RvtOQGXRVtwJoRVz4QOKtwQWWpVh9H0bcG3EDWWnU7hpqismi1iJqZhGc1ReUUKCgKj9QUTcp2vf5R7kyKJVsxQ/EAT9E0EA6UiZYmenpGMxOdwj5GtTt2FnRVYStd28siCEaaRkLTOCjN6KkorShyRS0GrlE5JQuDiIvaHwTliAjbh+WKGW6mqKCcRtYOTXr56JMCLISZ0TW7DteOIt1v3VxqYWeB1XLj2whPNDjWAq6K93IRsUF+yKa3qPhMkl3cTQvBp4AFWU7babzvRht/nBqjvf/geAR7FnWmaKLYt+qauBVp/MdgECol5dOv6FQF/2rgZZqNMRqhTNw/Z4XII/0d+1AAAAAASUVORK5CYII=" /></a>
         </div>
 
-        <img class="LOGO" src="img/LOGO.png" alt="Logo Gambeer">
-        <nav class="menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="servicios.html">Nuestros Servicios</a></li>
-              <li><a href="productos.html">Nuestros Productos</a></li>
-              <li><a href="contacto.html">Contactanos</a></li>
-            </ul>
-          </nav>
-
-    </header>
-    <main>
-        <form action="" class="formulario" id="formuario">
-            <!-- Nombre -->
-            <div class="formulario__grupo" id="grupo__nombre">
-                <label for="nombre" class="formulario__label">Nombre</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Natalia">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El nombre puede contener solo letras</p>
-            </div>
-            <!-- Apellido -->
-            <div class="formulario__grupo" id="grupo__apellido">
-                <label for="apellido" class="formulario__label">Apellido</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Natalia">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El apellido puede contener solo letras</p>
-            </div>
-            <!-- Mail -->
-            <div class="formulario__grupo" id="grupo__email">
-                <label for="email" class="formulario__label">Correo Electronico</label>
-                <div class="formulario__grupo-input">
-                    <input type="email" class="formulario__input" name="email" id="email"
-                        placeholder="correo@correo.com">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El email no puede contener espacios o simbolos trambolikos</p>
-            </div>
-            <!-- Telefono -->
-            <div class="formulario__grupo" id="grupo__telefono">
-                <label for="telefono" class="formulario__label">Telefono</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="1512345678">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El telefono solo puede contener numeros, sin espacios</p>
-            </div>
-            <!-- Mensaje -->
-            <div class="formulario__grupo" id="grupo__nombre">
-                <label for="nombre" class="formulario__label">Mensaje</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="nombre" id="nombre"
-                        placeholder="Escribe aqui tu mensaje...">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El campo no puede estar vacio</p>
-            </div>
-            <div class="formulario__grupo formulario__grupo-btn-enviar">
-                <button type="submit" class="formulario__btn">Enviar</button>
-                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Mensaje enviado!</p>
-            </div>
-        </form>
-
-    </main>
-    <footer>
-        <div class="footer-menu">
-            <a href="index.html">Home</a>
-            <a href="nosotros.html">Nuestros Servicios</a>
-            <a href="nosotros.html">Nuestros Productos</a>
-            <a href="contacto.html">Contactanos</a>
-        </div>
-<br>
-        <div class="copyright">
-            <p>Gambeer &copy; 2022 - Derechos Reservados</p>
-        </div>
-    </footer>
-    <script src="js/formulario.js"></script>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    </div>
+</section>
+<script src="js/mail.js"></script>
 </body>
 
 </html>
