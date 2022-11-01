@@ -23,6 +23,12 @@ const form = document.getElementById("formulario");
         return 0
     }
 
+    if (validarMensaje()){
+        alert("El campo mensaje no puede estar vacio! Por favor escribe tu solicitud!")
+        form.message.focus()
+        return 0
+    }
+
     enviarMail(e)
     console.log("Mail enviado")
     limpiarFormulario()
@@ -45,6 +51,10 @@ function validarTel(){
     console.log(regexPhone.test(form.client_phone.value))
     return regexPhone.test(form.client_phone.value)
 
+}
+
+function validarMensaje() {
+    return form.message.value.length  == 0
 }
 
  

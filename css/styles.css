@@ -1,37 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+  font-family: 'Barlow', sans-serif;
+}
 
-  }
+body{
+  min-width: 600px;
+  background: #21211a;
+  /* font-family: 'Barlow', sans-serif; */
+  color: white;
+  background-color: #21211a;
+  margin: 10px;
+  padding: 5px;
+}
 
-  body {
-    font-family: 'Barlow', sans-serif;
-    color: white;
-    background-color: #21211a;
-    margin: 20px;
-  }
-
-
-header {
-    position: relative;
-    background: #f9d423;
-    height: 180px;
-  }
-
-  .div_header{
+.padre{
   display: flex;
-
+  flex-flow: column nowrap;
 }
 
-.img_logo{
-  overflow: visible;
+.header{
+  margin: 10px;
+  border-radius: 10px;
+  background: #f9d423;
+  display: flex;
+  flex-flow: column wrap;
 }
 
-.logo {
-  position: relative;
-  float: left;
-  padding-top: 10px;
-  padding-left: 10px;
+.menu{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 150px;
+  align-items: center;
+}
+
+.logo{
+  flex: 1 1 auto;
   transition: 0.5s;
 }
 
@@ -40,92 +45,207 @@ header {
   
 }
 
+.img_logo{
+  margin-left: 20px;
+  width: 300px; 
+}
 
+.nav_menu{
+  background: #f9d423;
+  flex: 5 1 auto;
+}
 
+.nav_menu ul li {
+  font-weight: 600;
+  float: left;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 
-  .burger_menu{
-    display: flex;
-    height: 35px;
-    width: 35px;
-    float: right;
-    align-items: center;
-
-
-  }
-
-
-  .columnasocial {
-    display: inline-flex;
-    justify-content: end;
-    position: relative;
-    float: right;
-    padding: 10px;
-
-
-
-  }
-
-
-  .navbar {
-    display: flex;
-    align-items: center;
-    color: black;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.2rem;
- 
-  }
-
-
-  .navbar li{
-    float: left;
-    list-style-type: none;
-    /* border: #21211a 1px solid; */
-
-  }
-
-  .navbar a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-  }
-
-  .navbar a:hover {
-    color: white;
-    font-size: 1.4rem;
-    transition: font-size 0.3s;
-  }
-
-
-
-
-
-main{
-    /* min-height: 300px; */
 
 }
 
+.nav_menu ul li a {
+  display: block;
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
 
-footer {
-    position:relative;
+.nav_menu ul li a:hover {
+  color: white;
+  background-color: #fa4747;
+  
+}
+.pacman{
+  flex: 1 1 auto;
+  height: 80px;
+}
+
+.social{
+  margin-top: 40px;
+  flex: 1 1 auto;
+}
+
+
+.icon-list {
+  display: flex;
+  flex-flow: column nowrap;
+  transform: translateY(-20%); 
+}
+
+.icon-list a {
+transition: all 0.3s ease;
+color:white;
+font-size: 2rem;
+}
+
+.icon-list a:hover {
+color: #fa4747;
+}
+
+
+.articulos{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+}
+
+.article{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  /* background: rgb(0, 0, 0); */
+  flex: 1 1 30%;
+  text-align: justify;
+  
+}
+
+.link_title{
+  text-align: center;
+  color: #f9d423;
+  text-decoration: underline overline #fa4747;
+  font-size: 2rem; 
+}
+
+.link_title :hover{
+  color: white;
+  text-decoration: underline overline #fa4747;
+  
+}
+
+.link_f {
+  color: #f9d423;
+
+}
+
+.home_image {
+  border-radius: 20px;
+  padding: 5px;
+  width: 90%;
+    
+}
+
+.img-hover :hover{
+  transition: all 0.2s ease;
+  filter: grayscale(65%);
+}
+
+
+  .cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+     }
+    
+    .cards .card{
+    background: #fa4747 ;
+    display: flex;
+    width: 49%;
+    height: auto;
+    min-height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+          }
+    
+    .cards .card img{
+    width: 100px;
     height: 100px;
-    width: 100%;
-    background-color: #f9d423;
-    color: white;
-    font-size: 20px;
-  }
-.contenido_formulario
-{
- /* text-align: center; */
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 20%;
+    display:block;
+    }
+
+    .cards .card > .contenido-texto-card{
+      width: 50%;
+      justify-content: center;
+      color: white;
+      }
+
+.footer{
+  color: #000;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  background: #f9d423;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
+
+.datos{
+ flex: 1 1 30%;
+ padding-left: 20px;
+ font-weight: 600;
+ font-size: 00.8rem;
+}
+
+.copyrigth{
+  flex: 1 1 40%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+
+.invader{
+   flex: 1 1 30%;
+   align-self: flex-end;
+
+}
+
+.img_invader{
+
+  height: 120px;
+ 
+ }
+
+/* Comienzo de Contacto */
+.header_form{
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.header_form h1{
+  font-size: 2rem;
+}
+
+.header_form p{
+  font-size: 1.5rem;
+}
+
+.header_form h1 , p{
+  margin: 20px;
+  font: Barlow;
+}
+
 
 
 .formulario{
-  display: grid;
-    grid-area: contenido1;
-    font-family: Barlow;
     max-width: auto;
 
 }
@@ -147,7 +267,7 @@ footer {
 }
 
 .formulario__input{
-    width: 50%;
+    width: 80%;
     background: #f9d423;
     border: 3px solid transparent;
     border-radius: 5px;
@@ -186,7 +306,6 @@ top: 10px;
 .formulario__btn{
 width: 30%;
 text-align: center;
-float: left;
 border: none;
 border-radius: 10px 10px 10px 10px;  
 cursor: pointer;
@@ -200,124 +319,207 @@ background-color: #f9d423;
   background-color:#af9515;
 }
 
+.contenedor_formulario{
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+}
+
+.formulario{
+flex: 1 1 50%;
+}
+
+.mapa{
+flex: 1 1 50%;
+
+
+}
+.gmap{
+  width: 80%;
+}
+
+/* Fin de Contacto */
+
+/* Inicio de Productos */
+.head_productos{
+  text-align: center;
+}
+
+.head_productos h1{
+  font-size: 2rem;
+}
+
+.head_productos p{
+  font-size: 1.5rem;
+}
+
+.head_productos h1 , p{
+  margin: 20px;
+  font: Barlow;
+}
 
 
 
-  .footer-menu {
-    position: relative;
-    text-align: center;
+.contenedor_cervezas{
+  display: flex;
 
+}
 
-    }
+.cerveza_card{
+flex: 1 1 30%;
+text-align: center;
+}
 
-  .footer-menu a {
-    color: black;
-    font-weight: 500;
-    font-size: 1rem;
-    padding: 8px;
-    text-align: center;
-    text-decoration: none;
-    }
+.cerveza_label{
+  width: 90%;
+}
 
-  .footer-menu a:hover {
-    color: white;
-  }
+.img_botella{
+max-height: 300px;
+}
 
-  .copyright p {
-    color: black;
-    font-size: 0.6rem;
-    font-weight: 600;
-    text-align: center;
-  }
+.img_lata{
+  max-height: 300px; 
+}
+  /* Fin de Productos */
 
+/* Inicio de Quienes Somos */
 
-  .container{
-    display: grid;
-    grid-template: 190px 1fr 1fr 1fr 100px / 1fr 1fr 1fr;
-    grid-template-areas: "header header header"
-                "contenido1 contenido1 contenido1"
-                "contenido2 contenido2 contenido2"
-                "contenido3 contenido3 contenido3"
-                "footer footer footer";
-    grid-gap: 20px;
-    height: 100vh;
-  }
+.nosotros{
+  text-align: center;
+}
 
-  .item{
-    background-color: #f9d423;
-    color: #21211a;
-    padding: 10px;
-    border-radius: 10px;
-  }
+.vegan , .cruelty{
+  height: 128px;
+}
 
-  .header{
-    grid-area: header;
-  }
+.equipo{
+  margin: 30px;
+}
 
-  .contenido1{
-    grid-area: contenido1;
-  }
+.equipo h4{
+  font-size: 0.9rem;
+  font-weight: 500;
+}
 
-  .contenido2{
-    grid-area: contenido2;
-  }
-
-  .contenido3{
-    grid-area: contenido3;
-  }
-
-  .footer{
-    grid-area: footer;
-  }
-
-.home_image{
-  max-height: 300px;
+.img_equipo{
+  margin-top: 30px;
+  width: 80%;
+  max-width: 800px;
   border-radius: 10px;
-}
-
-@media  screen and (min-width: 640px) and (max-width: 960px) {
-
-  .container{
-    display: grid;
-    grid-template: 190px 1fr 1fr 100px / 1fr 1fr;
-    grid-template-areas: "header header"
-                "contenido1 contenido2"
-                "contenido3 contenido3"
-                "footer footer";
-
-  }
-  .LOGO{
-    height: 85%;
-
-  }
-
-  .burger_menu{
-    display: block;
-  }
 
 }
 
+.contenedor_grid{
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template-areas: "img1 img2" "img3 img4";
+}
+
+.img1{
+grid-area: img1;
+}
+
+.img2{
+  grid-area: img2;
+}
+
+.img3{
+  grid-area: img3;
+}
+
+.img4{
+  grid-area: img4;
+}
+/* Fin de Quienes somos */
+
+/* Inicio de media queries */
 
 
-@media  screen and (min-width: 320px) and (max-width: 640px) {
+@media all and (max-width: 1250px){
+  .menu{
+    flex-direction: column;
+    height: auto;
+  }
 
-  .container{
-    display: grid;
-    grid-template: 190px 1fr 1fr 1fr 100px / 1fr;
-    grid-template-areas: "header"
-                "contenido1"
-                "contenido2"
-                "contenido3"
-                "footer";
+  .icon-list{
+    flex-direction: row;
+  }
+
+  .fa-brands{
+    margin: 10px;
+  }
+
+  .contenedor_cervezas{
+    flex-direction: column;
+  }
+
+  .cerveza_label{
+    max-width: 500px;
+  }
+
+  .pacman{
+    display: none;
+  }
+
+  .cards{
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 20px;
 
   }
-  .LOGO{
-    height: 70%;
+  .cards .card{
+width: 100%;
+}
+.card{
+margin: 10px;
+}
+
+.img_logo{
+  width: 400px;
+  margin-top: 20px;
+}
+}
+
+@media all and (max-width: 1000px){
+  
+  .contenedor_formulario{
+    flex-flow: column wrap;
+    align-items: stretch;
+    
   }
-  .burger_menu{
-    display: block;
+  
+  .formulario{
+    flex: 1 1 auto;
+    }
+    
+    .mapa{
+    flex: 1 1 auto;
+    width: 85%;
+    margin-left: 15px;
+
+    
+    }
+    .gmap{
+      width: 100%;
+      border-radius: 10px;
+    }
+  
   }
 
+@media all and (max-width: 800px){
+.articulos{
+  flex-direction: column;
+}
+
+.contenedor_grid{
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr;
+  grid-template-areas: "img1" "img2" "img3" "img4";
+}
 
 }
 
+
+
+/* Fin de media queries */
